@@ -1,0 +1,91 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  background: rgba(37, 53, 69, 0.84);
+  border-radius: 4px;
+  transition: .3s all ease;
+  border: 1px solid white;
+  &__title {
+    font-size: 16px;
+    background-color: #00e5c9;
+    color: rgb(24, 25, 30);;
+    font-weight: 500;
+    padding: 10px;
+    &:focus {
+      outline: none;
+      background-color: #91fdf0;
+    }
+  }
+  &__list {
+    min-height: 40px;
+    border-radius: 4px;
+    padding: 2px 0 0;
+  }
+  &__item {
+    width: 100%;
+    background: #fefefe;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 2px;
+    &:hover {
+      background: #a9f9ef;
+    }
+  }
+  &__form {
+    display: none;
+    &-textarea {
+      width: 100%;
+      background: #1e1e24;
+      height: 60px;
+      border: none;
+      resize: none;
+      padding: 10px;
+      color: #00eed0;
+      &:focus {
+        outline: none;
+      }
+    }
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-button {
+      display: flex;
+      height: 35px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      &_success {
+        background: #07eed1;
+        color: #2d324c;
+      }
+      &_alert {
+        background: #fb02e5;
+      }
+    }
+  }
+  &__add-card-button {
+    display: flex;
+    height: 35px;
+    background: rgba(24, 25, 30, 0.61);
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-top: 1px solid white;
+    span {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+}

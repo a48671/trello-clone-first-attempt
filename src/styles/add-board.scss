@@ -1,0 +1,25 @@
+.add-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 0 20px;
+    background: rgba(19, 130, 204, .76);
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    align-self: baseline;
+    pointer-events: auto;
+    border: 1px solid white;
+  }
+}

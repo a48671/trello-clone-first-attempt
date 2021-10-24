@@ -1,0 +1,14 @@
+@import './default';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  background: url('../images/img.png') center / cover no-repeat;
+  justify-content: space-between;
+}
+
+@import './boards';
+@import './board';
+@import './add-board';
