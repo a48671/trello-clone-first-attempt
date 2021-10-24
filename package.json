@@ -1,4 +1,5 @@
 {
+  "homepage": "https://a48671.github.io/trello-clone-first-attempt",
   "name": "trello-clone",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,12 +7,15 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env MODE=development webpack serve",
-    "build": "cross-env MODE=production webpack"
+    "build": "cross-env MODE=production webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.4.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.4.0",
     "mini-css-extract-plugin": "^2.4.3",
     "sass": "^1.43.3",
